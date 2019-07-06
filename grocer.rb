@@ -39,7 +39,7 @@ end
 def checkout(cart, coupons)
   cons_cart = consolidate_cart(cart)
   app_cou = apply_coupons(cart, coupons)
-  app_cle = apply_clearance(cart)
+  app_cle = apply_clearance(app_cou)
   total = 0.00
   app_cle.keys.each do |item|
     total += app_cle[item][:price]*app_cle[item][:count]
