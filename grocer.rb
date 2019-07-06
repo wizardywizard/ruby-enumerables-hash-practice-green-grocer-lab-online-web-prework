@@ -33,6 +33,7 @@ def apply_clearance(cart)
       if clearance[:clearance] === cart[clearance[:item]][:clearance]
         cart[:item] = {:price => clearance[:cost] * .20, :clearance => cart[clearance[:item]][:clearance],  :count => cart[:count]},
   }
+  cart
 end
 
 def checkout(cart, coupons)
