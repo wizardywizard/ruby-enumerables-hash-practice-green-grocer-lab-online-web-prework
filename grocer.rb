@@ -41,9 +41,7 @@ def checkout(cart, coupons)
   app_cou = apply_coupons(cart, coupons)
   app_cle = apply_clearance(cart)
   total = 0.00
-  cart.keys
-  end
-  cart
+  cart_with_discounts_applied.keys.each do |item|
 end
 #consolidate cart array into a hash then apply coupons if the proper number is present
 #apply 20% discount if items are on clearance before calculating the total
