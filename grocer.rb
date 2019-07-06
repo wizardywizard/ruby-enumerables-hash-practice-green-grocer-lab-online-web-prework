@@ -31,6 +31,7 @@ def apply_clearance(cart)
   cart.each{|clearance|
     if cart.keys.include?(clearance[:item])
       if clearance[:clearance] === cart[clearance[:item]][:clearance]
+        
   }
 end
 
