@@ -46,6 +46,7 @@ def checkout(cart, coupons)
 end
   if total > 100.00
     total * 0.90
+    total
 end
 #consolidate cart array into a hash then apply coupons if the proper number is present
 #apply 20% discount if items are on clearance before calculating the total
