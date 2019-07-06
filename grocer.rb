@@ -38,7 +38,7 @@ end
 
 def checkout(cart, coupons)
   cart.each do |item|
-    consolidate_cart(cart)
+    
   end
   cart
 end
