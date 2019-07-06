@@ -41,7 +41,7 @@ def checkout(cart, coupons)
   app_cou = apply_coupons(cart, coupons)
   app_cle = apply_clearance(cart)
   total = 0.00
-  
+  cart.keys
   end
   cart
 end
