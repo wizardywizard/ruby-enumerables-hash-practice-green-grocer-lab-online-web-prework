@@ -49,7 +49,6 @@ end
   else
     total
   end
-    total
 end
 #consolidate cart array into a hash then apply coupons if the proper number is present
 #apply 20% discount if items are on clearance before calculating the total
