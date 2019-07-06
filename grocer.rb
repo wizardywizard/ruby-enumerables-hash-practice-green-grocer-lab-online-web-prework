@@ -32,6 +32,8 @@ def apply_clearance(cart)
     if cart.keys.include?(clearance[:item])
       if clearance[:clearance] === cart[clearance[:item]][:clearance]
         cart[:item] = {:price => clearance[:cost] * 0.20, :clearance => cart[clearance[:item]][:clearance],  :count => cart[:count]}
+    end
+  end
   }
   cart
 end
