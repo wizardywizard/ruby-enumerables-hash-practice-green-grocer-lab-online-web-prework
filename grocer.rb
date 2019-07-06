@@ -45,7 +45,8 @@ def checkout(cart, coupons)
     total += cart_with_discounts_applied[item][:price]*cart_with_discounts_applied[item][:count]
 end
   if total > 100.00
-    total * 0.90
+    total * 0.90.round(2)
+  end
     total
 end
 #consolidate cart array into a hash then apply coupons if the proper number is present
