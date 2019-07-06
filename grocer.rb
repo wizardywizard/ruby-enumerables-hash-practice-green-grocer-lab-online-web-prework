@@ -38,9 +38,9 @@ end
 
 def checkout(cart, coupons)
   cart.each do |item|
-    consolidate_cart
-    apply_coupons
-    apply_clearance
+    consolidate_cart(cart)
+    apply_coupons(cart)
+    apply_clearance(cart)
   end
   cart
 end
