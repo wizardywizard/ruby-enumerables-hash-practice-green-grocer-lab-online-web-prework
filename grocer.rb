@@ -43,7 +43,7 @@ def checkout(cart, coupons)
   total = 0.00
   cart_with_discounts_applied.keys.each do |item|
     total += cart_with_discounts_applied[item][:price]*cart_with_discounts_applied[item][:count]
-
+end
 end
 #consolidate cart array into a hash then apply coupons if the proper number is present
 #apply 20% discount if items are on clearance before calculating the total
