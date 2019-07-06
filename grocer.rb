@@ -29,7 +29,8 @@ end
 
 def apply_clearance(cart)
   cart.each{|clearance|
-    
+    if cart.keys.include?(clearance[:item])
+      
   }
 end
 
